@@ -4,13 +4,17 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 
 
+
+
+
 let randomPassword1 = document.getElementById("passbox1");
 let randomPassword2 = document.getElementById("passbox2");
 
 
 function generatePassword1() {
     let password = "";
-    for (let i=0; i<15;i++){
+    let lengthInput = Math.min(Number(document.getElementById("passwordLength").value), 20);
+    for (let i=0; i<lengthInput;i++){
        let randomMath= Math.floor(Math.random() * characters.length);
         password += characters[randomMath];
         randomPassword1.textContent = password
@@ -19,7 +23,8 @@ function generatePassword1() {
 
 function generatePassword2() {
     let password = "";
-    for (let i=0; i<15;i++){
+    let lengthInput = Math.min(Number(document.getElementById("passwordLength").value), 20);
+    for (let i=0; i<lengthInput;i++){
        let randomMath= Math.floor(Math.random() * characters.length);
         password += characters[randomMath];
         randomPassword2.textContent = password

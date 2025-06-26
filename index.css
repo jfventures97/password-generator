@@ -60,6 +60,7 @@ button {
     border: none;  
     border-radius: 5px;
     font-size: 16px;
+    margin-top : 15px;
 }
 
 .custom-divider {
@@ -87,4 +88,17 @@ button {
     display: flex;              /* Enable flex layout inside the box */
     justify-content: center;    /* Center horizontally */
     align-items: center;        /* Center vertically */
+}
+
+#passwordLength {
+    width: 250px;  /* adjust to your liking */
+    padding: 8px;  /* optional: make it taller and more readable */
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+h4 { 
+    font-family: "Inter", sans-serif;
+    margin-bottom: 15px;
 }
