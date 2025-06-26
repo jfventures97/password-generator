@@ -102,3 +102,7 @@ h4 {
     font-family: "Inter", sans-serif;
     margin-bottom: 15px;
 }
+
+.password-box {
+    cursor: pointer;
+}
